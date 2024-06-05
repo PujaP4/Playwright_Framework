@@ -29,7 +29,7 @@ test.describe.serial('Sample bunglow project ', () => {
 
     });
 
-    test('Verify user is able to click on Sample Bunglow Project G+1 card', async () => {
+    test('Verify user is able to click on Sample Bungalow Project G+1 card', async () => {
         await site_book.ClickOnSampleBunglowProject();
     })
 

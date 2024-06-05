@@ -61,7 +61,7 @@ export class SiteBook extends TestMethods{
 
     async ClickOnSampleBunglowProject(){
         await this.waitForSelector(this.samplebunglowProject,60000);
-        await this.clickOnElement(this.samplebunglowProject,"Clicked on Sample Bunglow Project G+1", 60000);
+        await this.clickOnElement(this.samplebunglowProject,"Clicked on Sample Bungalow Project G+1", 60000);
     }
 
     async ClickOnDetailedEstimate(){
