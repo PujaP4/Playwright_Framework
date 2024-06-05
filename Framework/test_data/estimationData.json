@@ -1,0 +1,32 @@
+{
+    "unit":{
+        "unit_sf":"sqft",
+        "unit_ft" : "ft",
+        "unit_no": "No."
+    },
+
+    "quantity":{
+        "groundFlooring":"2404.57",
+        "FrontYard" : "549.18",
+        "parkingArea":"600.44",
+        "passage" : "392.18",
+        "lobby" : "0.00",
+        "toiletParkingArea" : "47.80",
+        "dining_DrawingRoom" : "541.45",
+        "pantryArea" : "50.39",
+        "backyard" : "223.13"
+    },
+
+    "totalCost":{
+        "groundFlooring":"2,36,550.44",
+        "FrontYard" : "54,025.69",
+        "parkingArea":"59,068.95",
+        "passage" : "38,580.86",
+        "lobby" : "0.00",
+        "toiletParkingArea" : "4,702.43",
+        "dining_DrawingRoom" : "53,265.51",
+        "pantryArea" : "4,956.88",
+        "backyard" : "21,950.25"
+    }
+
+}

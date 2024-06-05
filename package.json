@@ -1,0 +1,29 @@
+{
+  "name": "lwmsr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf allure-results && rimraf allure-report && rimraf test-screenshots && rimraf wdio-logs",
+    "generateallurereport": "npx allure generate --clean allure-results",
+    "openallurereport": "npx allure open ./allure-report",
+    "InstallPackage": "npm install && npx playwright install",
+    "ExecuteTest": "set CI=true && npx playwright test --reporter=line,allure-playwright",
+    "Debug": "npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.8.2",
+    "allure-commandline": "^2.23.1",
+    "allure-playwright": "^2.4.0",
+    "dotenv": "^16.3.1",
+    "experimental-allure-playwright": "^0.0.3",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "playwright-core": "^1.37.1"
+  }
+}
