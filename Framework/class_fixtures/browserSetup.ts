@@ -1,21 +1,8 @@
-import { chromium, Browser, Page, test } from '@playwright/test';
+import { chromium, Browser, Page} from '@playwright/test';
 
 let browser: Browser;
 let page: Page;
 let context : any;
-let newPage: Page;
-
-test.beforeAll(async () => {
-  // Launch a browser instance before all tests
-  browser = await chromium.launch();
-});
-
-test.afterAll(async () => {
-  // Close the browser instance after all tests
-  if (browser) {
-    await browser.close();
-  }
-});
 
 export async function createPage(): Promise<Page> {
   browser = await chromium.launch({headless:false});
@@ -24,9 +11,4 @@ export async function createPage(): Promise<Page> {
   return page;
 };
 
-export async function newTab(): Promise<Page> {
-  newPage = await context.newPage();
-  return newPage;
-};
-
-export { page, newPage, browser, context};
+export { page};

@@ -1,0 +1,112 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="0" errors="0" time="18.181116">
+<testsuite name="SampleBungalowProject_detailedEstimate.spec.ts" timestamp="2024-06-06T04:44:21.394Z" hostname="chromium" tests="6" failures="1" skipped="0" time="11.867" errors="0">
+<testcase name="Sample bunglow project  › Verify user is able to Login to Site Book" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="1.198">
+<system-out>
+<![CDATA[Mobile number is entered
+Clicked on Continue button
+Password is entered
+Clicked on Login button
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--588f3-oject-Verify-user-is-able-to-Login-to-Site-Book-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--588f3-oject-Verify-user-is-able-to-Login-to-Site-Book-chromium\test-finished-2.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify user is able to click on Sample Bungalow Project G+1 card" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0.897">
+<system-out>
+<![CDATA[Clicked on Sample Bungalow Project G+1
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify user is able to click on Detailed Estimate" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="1.469">
+<system-out>
+<![CDATA[Clicked on Detailed Estimate
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--ca7a1-rify-user-is-able-to-click-on-Detailed-Estimate-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Quanitity for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="1.334">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Quanitity-for-Ground-Flooring-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Unit for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0.723">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Unit-for-Ground-Flooring-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Total Cost for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="6.246">
+<failure message="SampleBungalowProject_detailedEstimate.spec.ts:47:9 Verify Total Cost for Ground Flooring" type="FAILURE">
+<![CDATA[  [chromium] › SampleBungalowProject_detailedEstimate.spec.ts:47:9 › Sample bunglow project  › Verify Total Cost for Ground Flooring 
+
+    Error: Timed out 5000ms waiting for expect(received).toContainText(expected)
+
+    Expected string: "21,950.25"
+    Received string: " 21,950.11 "
+    Call log:
+      - expect.toContainText with timeout 5000ms
+      - waiting for locator('#total').nth(10)
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+      -   locator resolved to <td id="total" colspan="0" class="text-end" _ngconte…> 21,950.11 </td>
+      -   unexpected value " 21,950.11 "
+
+
+       at ..\pageObject\siteBookPageObj.ts:118
+
+      116 |         await expect(this.totalCost.nth(8)).toContainText(estimation_data.totalCost.dining_DrawingRoom);
+      117 |         await expect(this.totalCost.nth(9)).toContainText(estimation_data.totalCost.pantryArea);
+    > 118 |         await expect(this.totalCost.nth(10)).toContainText(estimation_data.totalCost.backyard);
+          |                                              ^
+      119 |      }
+      120 |
+      121 |
+
+        at SiteBook.VerifyTotalCostOfGroundFlooring (C:\Automation_Task\Playwright_Framework\framework\pageObject\siteBookPageObj.ts:118:46)
+        at C:\Automation_Task\Playwright_Framework\framework\testcase\SampleBungalowProject_detailedEstimate.spec.ts:48:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Total-Cost-for-Ground-Flooring-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Total-Cost-for-Ground-Flooring-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Total-Cost-for-Ground-Flooring-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Total-Cost-for-Ground-Flooring-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample-bunglow-project-Verify-Total-Cost-for-Ground-Flooring-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
