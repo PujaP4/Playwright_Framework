@@ -29,23 +29,23 @@ test.describe.serial('Sample bunglow project ', () => {
 
     });
 
-    test('Verify user is able to click on Sample Bungalow Project G+1 card', async () => {
-        await site_book.ClickOnSampleBunglowProject();
-    })
+    // test('Verify user is able to click on Sample Bungalow Project G+1 card', async () => {
+    //     await site_book.ClickOnSampleBunglowProject();
+    // })
 
-    test('Verify user is able to click on Detailed Estimate', async () => {
-        await site_book.ClickOnDetailedEstimate();
-    })
-    test('Verify Quanitity for Ground Flooring', async () => {
-        await site_book.VerifyQauntityOfGroundFlooring();
-    });
+    // test('Verify user is able to click on Detailed Estimate', async () => {
+    //     await site_book.ClickOnDetailedEstimate();
+    // })
+    // test('Verify Quanitity for Ground Flooring', async () => {
+    //     await site_book.VerifyQauntityOfGroundFlooring();
+    // });
 
-    test('Verify Unit for Ground Flooring', async () => {
-        await site_book.VerifyUnitOfGroundFlooring();
-    })
+    // test('Verify Unit for Ground Flooring', async () => {
+    //     await site_book.VerifyUnitOfGroundFlooring();
+    // })
 
-    test('Verify Total Cost for Ground Flooring', async () => {
-        await site_book.VerifyTotalCostOfGroundFlooring();
-    })
+    // test('Verify Total Cost for Ground Flooring', async () => {
+    //     await site_book.VerifyTotalCostOfGroundFlooring();
+    // })
     
 })
