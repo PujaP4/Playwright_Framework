@@ -1,6 +1,6 @@
 # Playwright_Framework
 
-1. Testcases in [Framework] folder
+1. Testcases in [Framework] folder under --> testcase sub folder
 2. Report - [playwright-report] folder
 3. CI/CD workflow triggers on commit
 4. Framework follows - Page object model, Test data, and utils
