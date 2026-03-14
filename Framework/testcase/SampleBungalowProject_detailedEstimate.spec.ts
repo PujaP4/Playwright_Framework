@@ -9,7 +9,7 @@ test.describe.serial('Sample bunglow project ', () => {
     test.beforeAll(async () => {
         const page = await createPage();
         site_book =  new SiteBook(page!);
-        await page.goto(`${process.env.URL}`); //we can pass uer using .env 
+        await page.goto(`${process.env.URL as string}`); //we can pass uer using .env 
         // await page.goto('app/auth/signin?logout=true');// we cam also desfine baseURL in config file
     });
 

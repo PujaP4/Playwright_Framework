@@ -29,7 +29,7 @@ const config: PlaywrightTestConfig = {
     [
       "html",
       {
-        open: "never",
+        open: "on-failure",
       },
     ],
     [
@@ -48,7 +48,7 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: {
         ...devices["Desktop Chrome"],
-        baseURL: 'https://mysitebook.io/', // from here also we can pas diff environment url
+        baseURL: 'https://app.mysitebook.io/app/auth/signin?logout=true', // from here also we can pas diff environment url
         screenshot:'on',
         video:'on'
       },
